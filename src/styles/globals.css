@@ -72,3 +72,123 @@ body {
     font-size: 1.1rem;
     opacity: 0.68;
 }
+
+/* search form */
+.search-form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    background-color: #fff;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.04);
+}
+
+.search-form .input-control {
+    position: relative;
+    width: 37rem;
+    margin-bottom: 2rem;
+}
+
+.search-form .input-control input {
+    outline: none;
+    font-family: inherit;
+    width: 100%;
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    background-color: #fafafa;
+    font-size: inherit;
+    font-weight: 500;
+    color: #333;
+    transition: all 0.3s ease;
+    border: 2px solid #fafafa;
+    box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-form .input-control input:focus {
+    outline: none;
+    border: 2px solid #7263f3;
+}
+
+.search-form .input-control input::placeholder {
+    color: #333;
+    opacity: 0.3;
+}
+
+.search-form .input-control .submit-btn {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #7263f3;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 500;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.search__results {
+    position: absolute;
+    height: 14rem;
+    width: 37rem;
+    top: 12%;
+    left: 50%;
+    overflow: auto;
+    transform: translateX(-50%);
+    z-index: 5;
+    padding: 1rem 1.2rem;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pokemon-name {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.pokemon-name:hover {
+    background-color: #f0f0f0;
+    color: #7263f3;
+}
+
+.next {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+    padding-bottom: 2rem;
+}
+
+.next button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.04);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 500;
+    color: #7263f3;
+    transition: all 0.3s ease;
+}
+
+.next button:hover {
+    color: #333;
+}
